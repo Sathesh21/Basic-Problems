@@ -1,0 +1,10 @@
+function validateForm()
+{ var mailValue = document.getElementById('mail').value.trim();
+if (mailValue.length > 0) {
+document.getElementById('pwdblock').style.display = "block";
+document.getElementById('submitvalue').innerHTML = "Submit"; 
+}
+    else { 
+        alert("Email not matches"); 
+    }
+ }
