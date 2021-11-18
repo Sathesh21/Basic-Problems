@@ -18,23 +18,23 @@
 
 
     <script>
-        arithmatic = (u) => {
+        arithmatic = (arithmaticoperators) => {
             var a = parseInt(document.getElementById('value1').value);
             var b = parseInt(document.getElementById('value2').value);
-            console.log(a, b, u)
+            console.log(a, b, arithmaticoperators)
 
-            switch (u) {
+            switch (arithmaticoperators) {
                 case "add":
-                    alert(a + b);
+                    document.getElementById('add')=a + b;
                     break;
                 case "sub":
-                    alert(a - b);
+                document.getElementById('sub')=a - b;
                     break;
                 case "mul":
-                    alert(a * b);
+                document.getElementById('multi')=a * b;
                     break;
                 case "div":
-                    alert(a / b);
+                document.getElementById('div')=a / b;
                     break;
                  default:
                   alert('input is not vaild');
