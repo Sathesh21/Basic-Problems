@@ -13,7 +13,7 @@
     <button id="add" onclick="arithmatic('add')">+</button>
     <button id="sub" onclick="arithmatic('sub')">-</button>
     <button id="multi" onclick="arithmatic('mul')">*</button>
-    <button id="div" onclick="arithmatic('div')">*</button>
+    <button id="div" onclick="arithmatic('div')">/</button>
     <div>output<input type="text" id="op"></div>
 
 
@@ -25,16 +25,16 @@
 
             switch (arithmaticoperator) {
                 case "add":
-                    document.getElementById('add')=a + b;
+                    document.getElementById('add').value = a + b;
                     break;
                 case "sub":
-                document.getElementById('sub')=a - b;
+                document.getElementById('sub').value =a - b;
                     break;
                 case "mul":
-                document.getElementById('multi')=a * b;
+                document.getElementById('multi').value = a * b;
                     break;
                 case "div":
-                document.getElementById('div')=a / b;
+                document.getElementById('div').value = a / b;
                     break;
                  default:
                   alert('input is not vaild');
