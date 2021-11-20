@@ -25,24 +25,19 @@
 
             switch (arithmaticoperator) {
                 case "add":
-                    document.getElementById('add')=a + b;
+                    document.getElementById('op').value = a + b;
                     break;
                 case "sub":
-                document.getElementById('sub')=a - b;
+                    document.getElementById('op').value = a - b;
                     break;
                 case "mul":
-                document.getElementById('multi')=a * b;
+                    document.getElementById('op').value = a * b;
                     break;
                 case "div":
-                document.getElementById('div')=a / b;
+                    document.getElementById('op').value = a / b;
                     break;
-                 default:
-                  alert('input is not vaild');
-
-
-
-
-
+                default:
+                    alert('input is not vaild');
             }
         }
 
