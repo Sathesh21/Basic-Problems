@@ -8,22 +8,22 @@
 </head>
 
 <body>
-    <div>value1 <input type="text" id="value1"> </div>
-    <div>value2 <input type="text" id="value2"> </div>
+    <div>value1 <input type="text" id="value1"> </div><br>
+    <div>value2 <input type="text" id="value2"> </div><br>
     <button id="add" onclick="arithmatic('add')">+</button>
     <button id="sub" onclick="arithmatic('sub')">-</button>
     <button id="multi" onclick="arithmatic('mul')">*</button>
-    <button id="div" onclick="arithmatic('div')">/</button>
-    <div>output<input type="text" id="op"></div>
+    <button id="div" onclick="arithmatic('div')">*</button>
+    <div>output<input type="text" id="op" ></div>
 
 
     <script>
-        arithmatic = (arithmaticoperator) => {
+        arithmatic = (arithmaticoperators) => {
             var a = parseInt(document.getElementById('value1').value);
             var b = parseInt(document.getElementById('value2').value);
-            console.log(a, b, arithmaticoperator)
+            console.log(a, b, arithmaticoperators)
 
-            switch (arithmaticoperator) {
+            switch (arithmaticoperators) {
                 case "add":
                     document.getElementById('op').value = a + b;
                     break;
@@ -38,6 +38,11 @@
                     break;
                 default:
                     alert('input is not vaild');
+
+
+
+
+
             }
         }
 
