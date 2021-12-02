@@ -15,9 +15,13 @@ function add() {
       const arrayIndex = parseInt(i);
       arr[arrayIndex] = newobj;
       console.log(arr);
+      
+      document.getElementById("name").value = null;
+      document.getElementById("gender").value = null;
+      document.getElementById("area").value = null;
     } else {
       var obj = { name, gender, area };
-      alert(JSON.stringify(obj));
+      // alert(JSON.stringify(obj));
       arr.push(obj);
       console.log(arr);
 
