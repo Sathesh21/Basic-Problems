@@ -1,49 +1,49 @@
-// function validatePalin(string) {
-//     // get the total length of the words
+// program to check if the string is palindrome or not
 
-//     const len = string.length;
-//     let isPalindrom = true;
+// take input
+const string = "hsoh";
 
-//     // Use for loop to divide the words into 2 half
+// call the function
+const value = checkPalindrome(string);
 
-//     for (let i = 0; i < len / 2; i++) {
-//         console.log(len / 2)
-//             // validate the first and last characters are same
-//         console.log(i, string[i], "-----", (len - 1 - i), string[len - 1 - i])
-//         if (string[i] !== string[len - 1 - i]) {
-//             isPalindrom = false;
-//         }
-//     }
+function checkPalindrome(str) {
+  // find the length of a string
+  const len = string.length;
 
-//     return isPalindrom;
-// }
-
-// const result = validatePalin("5235");
-
-// if (result) {
-//     console.log("Yes")
-// } else {
-//     console.log("No")
-// }
-
-function Palindrome(n) {
-    var rem, temp, final = 0;
-    var number = Number(n);
-
-    temp = number;
-    console.log(temp)
-    while (number > 0) {
-        rem = number % 10;
-        console.log("Remainder-->", rem)
-        number = parseInt(number / 10);
-        console.log("Number--->", number)
-        final = final * 10 + rem;
-        console.log("Final-->", final)
+  // loop through half of the string
+  for (let i = 0; i < len / 2; i++) {
+    // check if first and last string are same
+    if (string[i] !== string[len - 1 - i]) {
+      return "It is not a palindrome";
     }
-    if (final == temp) {
-        console.log("The inputed number is Palindrome");
-    } else {
-        console.log("The inputted number is not palindrome");
-    }
+  }
+  return "It is a palindrome";
 }
-Palindrome(515)
+console.log(value);
+
+
+
+
+
+
+// function Palindrome(n) {
+//     var rem, temp, final = 0;
+//     var number = Number(n);
+
+//     temp = number;
+//     console.log(temp)
+//     while (number > 0) {
+//         rem = number % 10;
+//         console.log("Remainder-->", rem)
+//         number = parseInt(number / 10);
+//         console.log("Number--->", number)
+//         final = final * 10 + rem;
+//         console.log("Final-->", final)
+//     }
+//     if (final == temp) {
+//         console.log("The inputed number is Palindrome");
+//     } else {
+//         console.log("The inputted number is not palindrome");
+//     }
+// }
+// Palindrome(515)
